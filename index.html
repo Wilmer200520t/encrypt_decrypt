@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./public/clave-de-encriptacion.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Enciptador</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="main">
+        <div class="main__input">
+          <textarea placeholder="Ingrese el texto aquí" id="input"></textarea>
+        </div>
+        <div class="main__action">
+          <div class="main__sugerencia">
+            <img
+              src="./public/alerta.png"
+              alt="main__sugerencia"
+              width="3%"
+              height="3%" />
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="main__button">
+            <button class="encrypt">Encriptar</button>
+            <button class="decrypt">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="result__message">
+          <div class="result__message_img">
+            <img
+              src="./public/clave-de-encriptacion.png"
+              alt="clave-de-encriptacion"
+              width="10%"
+              height="10%" />
+          </div>
+          <div class="result__message_text">
+            <h1>Ningun mensage fue encontrado</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

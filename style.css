@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  height: 97%;
+  width: 97%;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f5fc;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 4%;
+  margin: 3%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 58%;
+  height: 100%;
+}
+
+.main__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+
+.main__input textarea {
+  width: 100%;
+  height: 80vh;
+  background-color: #f3f5fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 10px;
+  outline: none;
+  font-size: 25px;
+  color: #0a3871;
+  resize: none;
+}
+
+.main__action {
+  align-self: flex-end;
+}
+
+.main__sugerencia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex: 1;
+  padding-bottom: 2%;
+}
+
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.main__button button {
+  width: 49%;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.encrypt {
+  border: none;
+  background-color: #0a3871;
+  color: #ffffff;
+}
+
+.decrypt {
+  background-color: #ffffff;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+  height: 100%;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.result__buttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 85%;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.result__buttom .copy {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #0a3871;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #0a3871;
+}
+
+.result__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.result__input textarea {
+  height: 78vh;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  resize: none;
+}
+
+.result__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+  gap: 10px;
+}
+.result__message_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.result__message_img img {
+  width: 70%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.result__message_text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.result__message_text p {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #0a3871;
+}
+
+.result__message_text h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: #0a3871;
+}
+
+@media (max-width: 1024px) {
+  .result__message_img {
+    display: none;
+  }
+  .result__message_text {
+    margin: 5%;
+  }
+  .content {
+    gap: 2%;
+    height: auto;
+  }
+  .main {
+    width: 100%;
+  }
+  .main__input textarea {
+    height: 50vh;
+  }
+  .result {
+    height: auto;
+    width: 100%;
+  }
+  .result__input textarea {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .result__message_img {
+    display: none;
+  }
+  .content {
+    gap: 2%;
+  }
+  .main {
+    width: 100%;
+  }
+  .main__input textarea {
+    height: 50vh;
+  }
+  .result {
+    width: 100%;
+  }
+  .result__input textarea {
+    height: 50vh;
+  }
+  .result {
+    height: auto;
+    width: 100%;
+  }
+}
